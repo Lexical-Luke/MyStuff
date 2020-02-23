@@ -10,3 +10,4 @@ jobs:
     dist: xenial
     dist: bionic
   - os: osx
+    env: DOTNETPATH=/Users/travis/.dotnet

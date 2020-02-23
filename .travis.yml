@@ -7,7 +7,7 @@ script:
 
 jobs:
  include:
-    dist: xenial
-    dist: bionic
+  - dist: xenial
+  - dist: bionic
   - os: osx
-    env: DOTNETPATH=/Users/travis/.dotnet
+  - env: DOTNETPATH=/Users/travis/.dotnet

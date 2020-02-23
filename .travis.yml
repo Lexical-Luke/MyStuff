@@ -9,4 +9,4 @@ jobs:
  include:
   - dist: xenial
   - dist: bionic
-  - os: osx 
+  - os: osx

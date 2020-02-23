@@ -12,7 +12,7 @@ namespace Problems
             Console.WriteLine(prefix(null));
         }
 
-        static public string prefix(string input)
+        public static string prefix(string input)
         {
             int charz;
             int words = 0;

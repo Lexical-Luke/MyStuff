@@ -8,5 +8,5 @@ script:
 jobs:
  include:
   - dist: xenial
-  - dist: trusty
+  - dist: bionic
   - os: osx 

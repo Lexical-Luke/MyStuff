@@ -1,6 +1,6 @@
 language: csharp
-os: linux
-dotnet: 2.2
+dotnet: none
+mono: none
 
 script:
 - DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX=0 RuntimeFrameworkVersion=1.0.11 dotnet test -f netcoreapp1.0 src/StreamJsonRpc.Tests

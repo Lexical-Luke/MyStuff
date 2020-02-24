@@ -1,0 +1,966 @@
+travis_fold:start:worker_info
+[0K[33;1mWorker information[0m
+hostname: 65e09819-dcb2-4cb9-b91f-c588cf401bca@1.worker-org-6bc68c5dcd-k6mbl.macstadium-prod-2
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: 0b410ea5-0219-4e7b-a320-2c0dfd33382b travis-ci-macos10.13-xcode9.4.1-19-1576204381 (via amqp)
+startup: 1m4.856114603s
+travis_fold:end:worker_info
+[0Ktravis_time:start:248674f0
+[0Ktravis_time:end:248674f0:start=1582497042095916000,finish=1582497042789955000,duration=694039000,event=no_world_writable_dirs
+[0Ktravis_time:start:17189fdb
+[0Ktravis_time:end:17189fdb:start=1582497042802058000,finish=1582497042811024000,duration=8966000,event=check_unsupported
+[0Ktravis_time:start:023a982c
+[0Ktravis_fold:start:system_info
+[0K[33;1mBuild system information[0m
+
+Build language: csharp
+
+Build id: 654187957
+
+Job id: 654187960
+
+Runtime kernel version: 17.7.0
+
+travis-build version: 227baae64
+
+[34m[1mBuild image provisioning date and time[0m
+
+Fri Dec 13 04:54:58 GMT 2019
+
+[34m[1mOperating System Details[0m
+
+ProductName:	Mac OS X
+
+ProductVersion:	10.13.6
+
+BuildVersion:	17G65
+
+[34m[1mGit version[0m
+
+git version 2.24.1
+
+[34m[1mbash version[0m
+
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin17)
+
+Copyright (C) 2007 Free Software Foundation, Inc.
+
+[34m[1mGCC version[0m
+
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+
+Target: x86_64-apple-darwin17.7.0
+
+Thread model: posix
+
+InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+[34m[1mLLVM version[0m
+
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+
+Target: x86_64-apple-darwin17.7.0
+
+Thread model: posix
+
+InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+[34m[1mPre-installed Ruby versions[0m
+
+ruby-2.6.3
+
+[34m[1mPre-installed Node.js versions[0m
+
+v10.17.0
+
+v12.13.0
+
+v12.13.1
+
+v13.0.1
+
+v4.9.1
+
+v6.17.1
+
+v8.16.2
+
+[34m[1mmvn -version[0m
+
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+
+Maven home: /usr/local/Cellar/maven/3.6.3/libexec
+
+Java version: 13.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home
+
+Default locale: en_US, platform encoding: UTF-8
+
+OS name: "mac os x", version: "10.13.6", arch: "x86_64", family: "mac"
+
+travis_fold:end:system_info
+[0K
+
+travis_time:end:023a982c:start=1582497042822281000,finish=1582497042843297000,duration=21016000,event=show_system_info
+[0Ktravis_time:start:29a846d8
+[0Ktravis_time:end:29a846d8:start=1582497042854727000,finish=1582497042864488000,duration=9761000,event=rm_riak_source
+[0Ktravis_time:start:09c09d06
+[0Ktravis_time:end:09c09d06:start=1582497042875882000,finish=1582497042885445000,duration=9563000,event=fix_rwky_redis
+[0Ktravis_time:start:02bdbd9c
+[0Ktravis_time:end:02bdbd9c:start=1582497042896748000,finish=1582497043383626000,duration=486878000,event=wait_for_network
+[0Ktravis_time:start:017c00d2
+[0Ktravis_time:end:017c00d2:start=1582497043391687000,finish=1582497043398096000,duration=6409000,event=update_apt_keys
+[0Ktravis_time:start:2535f957
+[0Ktravis_time:end:2535f957:start=1582497043406051000,finish=1582497043413704000,duration=7653000,event=fix_hhvm_source
+[0Ktravis_time:start:06f590a0
+[0Ktravis_time:end:06f590a0:start=1582497043421759000,finish=1582497043428767000,duration=7008000,event=update_mongo_arch
+[0Ktravis_time:start:052d7978
+[0Ktravis_time:end:052d7978:start=1582497043437177000,finish=1582497043447279000,duration=10102000,event=fix_sudo_enabled_trusty
+[0Ktravis_time:start:0c9a2b10
+[0Ktravis_time:end:0c9a2b10:start=1582497043455542000,finish=1582497043462160000,duration=6618000,event=update_glibc
+[0Ktravis_time:start:175162d1
+[0Ktravis_time:end:175162d1:start=1582497043474047000,finish=1582497043542584000,duration=68537000,event=clean_up_path
+[0Ktravis_time:start:0344a4e6
+[0Ktravis_time:end:0344a4e6:start=1582497043553530000,finish=1582497043616799000,duration=63269000,event=fix_resolv_conf
+[0Ktravis_time:start:0b3c8cf8
+[0Ktravis_time:end:0b3c8cf8:start=1582497043632979000,finish=1582497043703667000,duration=70688000,event=fix_etc_hosts
+[0Ktravis_time:start:143db8f4
+[0Ktravis_time:end:143db8f4:start=1582497043717154000,finish=1582497043727850000,duration=10696000,event=fix_mvn_settings_xml
+[0Ktravis_time:start:1ed941d8
+[0Ktravis_time:end:1ed941d8:start=1582497043741066000,finish=1582497043811220000,duration=70154000,event=no_ipv6_localhost
+[0Ktravis_time:start:075a17fc
+[0Ktravis_time:end:075a17fc:start=1582497043823535000,finish=1582497043833734000,duration=10199000,event=fix_etc_mavenrc
+[0Ktravis_time:start:057c5e58
+[0Ktravis_time:end:057c5e58:start=1582497043846055000,finish=1582497044114128000,duration=268073000,event=fix_wwdr_certificate
+[0Ktravis_time:start:011eb370
+[0Ktravis_time:end:011eb370:start=1582497044127312000,finish=1582497044384709000,duration=257397000,event=put_localhost_first
+[0Ktravis_time:start:10b81fe4
+[0Ktravis_time:end:10b81fe4:start=1582497044401489000,finish=1582497044411850000,duration=10361000,event=home_paths
+[0Ktravis_time:start:0098e1df
+[0Ktravis_time:end:0098e1df:start=1582497044425879000,finish=1582497044458789000,duration=32910000,event=disable_initramfs
+[0Ktravis_time:start:03920278
+[0Ktravis_time:end:03920278:start=1582497044471998000,finish=1582497044522963000,duration=50965000,event=disable_ssh_roaming
+[0Ktravis_time:start:08e1b038
+[0Ktravis_time:end:08e1b038:start=1582497044547263000,finish=1582497044572770000,duration=25507000,event=debug_tools
+[0Ktravis_time:start:00ab588a
+[0K
+
+travis_time:end:00ab588a:start=1582497044591943000,finish=1582497048381166000,duration=3789223000,event=uninstall_oclint
+[0Ktravis_time:start:34846a73
+[0Ktravis_time:end:34846a73:start=1582497048390011000,finish=1582497050010282000,duration=1620271000,event=rvm_use
+[0Ktravis_time:start:029abd8a
+[0Ktravis_time:end:029abd8a:start=1582497050027295000,finish=1582497050100561000,duration=73266000,event=rm_etc_boto_cfg
+[0Ktravis_time:start:2e02fdc2
+[0Ktravis_time:end:2e02fdc2:start=1582497050113885000,finish=1582497050128416000,duration=14531000,event=rm_oraclejdk8_symlink
+[0Ktravis_time:start:0bf9431e
+[0Ktravis_time:end:0bf9431e:start=1582497050144899000,finish=1582497050166780000,duration=21881000,event=enable_i386
+[0Ktravis_time:start:000f10e0
+[0Ktravis_time:end:000f10e0:start=1582497050180273000,finish=1582497050198341000,duration=18068000,event=update_rubygems
+[0Ktravis_time:start:01a2e8a0
+[0Ktravis_time:end:01a2e8a0:start=1582497050212649000,finish=1582497050235425000,duration=22776000,event=ensure_path_components
+[0Ktravis_time:start:05c936be
+[0Ktravis_time:end:05c936be:start=1582497050251441000,finish=1582497050262182000,duration=10741000,event=redefine_curl
+[0Ktravis_time:start:3252bb6a
+[0Ktravis_time:end:3252bb6a:start=1582497050277709000,finish=1582497050288475000,duration=10766000,event=nonblock_pipe
+[0Ktravis_time:start:0e42c4cb
+[0Ktravis_time:end:0e42c4cb:start=1582497050307814000,finish=1582497050321018000,duration=13204000,event=apt_get_update
+[0Ktravis_time:start:00161f70
+[0Ktravis_time:end:00161f70:start=1582497050336713000,finish=1582497050351137000,duration=14424000,event=deprecate_xcode_64
+[0Ktravis_time:start:1a639924
+[0Ktravis_time:end:1a639924:start=1582497050367127000,finish=1582497050387293000,duration=20166000,event=update_heroku
+[0Ktravis_time:start:236b4fb0
+[0Ktravis_time:end:236b4fb0:start=1582497050402591000,finish=1582497050415681000,duration=13090000,event=shell_session_update
+[0Ktravis_time:start:068768d6
+[0Ktravis_time:end:068768d6:start=1582497050429501000,finish=1582497050442178000,duration=12677000,event=maven_central_mirror
+[0Ktravis_time:start:01f0760b
+[0Ktravis_time:end:01f0760b:start=1582497050456439000,finish=1582497050468446000,duration=12007000,event=maven_https
+[0K
+
+[31;1mC# support for Travis-CI is community maintained.[0m
+
+[31;1mPlease open any issues at https://travis-ci.community/c/languages/37-category and cc @joshua-anderson @akoeplinger @nterry[0m
+
+travis_fold:start:mono-install
+[0K[33;1mInstalling Mono[0m
+
+travis_time:start:0f4e1000
+[0K$ wget --retry-connrefused --waitretry=1 -O /tmp/mdk.pkg http://download.mono-project.com/archive/mdk-latest.pkg
+
+--2020-02-23 22:30:50--  http://download.mono-project.com/archive/mdk-latest.pkg
+
+Resolving download.mono-project.com (download.mono-project.com)... 72.21.81.200
+
+Connecting to download.mono-project.com (download.mono-project.com)|72.21.81.200|:80... connected.
+
+HTTP request sent, awaiting response... 200 OK
+
+Length: 362022327 (345M) [application/octet-stream]
+
+Saving to: â€˜/tmp/mdk.pkgâ€™
+
+
+
+
+/tmp/mdk.pkg          0%[                    ]       0  --.-KB/s               
+/tmp/mdk.pkg          5%[>                   ]  17.53M  87.6MB/s               
+/tmp/mdk.pkg          9%[>                   ]  34.27M  85.7MB/s               
+/tmp/mdk.pkg         17%[==>                 ]  61.01M   101MB/s               
+/tmp/mdk.pkg         22%[===>                ]  78.01M  97.0MB/s               
+/tmp/mdk.pkg         30%[=====>              ] 105.75M   105MB/s               
+/tmp/mdk.pkg         36%[======>             ] 125.52M   104MB/s               
+/tmp/mdk.pkg         42%[=======>            ] 147.02M   105MB/s               
+/tmp/mdk.pkg         48%[========>           ] 168.63M   105MB/s               
+/tmp/mdk.pkg         57%[==========>         ] 197.51M   109MB/s               
+/tmp/mdk.pkg         66%[============>       ] 230.24M   115MB/s               
+/tmp/mdk.pkg         73%[=============>      ] 255.28M   116MB/s               
+/tmp/mdk.pkg         80%[===============>    ] 276.33M   115MB/s               
+/tmp/mdk.pkg         84%[===============>    ] 290.55M   111MB/s               
+/tmp/mdk.pkg         91%[=================>  ] 315.88M   113MB/s               
+/tmp/mdk.pkg         99%[==================> ] 343.89M   114MB/s    eta 0s     
+/tmp/mdk.pkg        100%[===================>] 345.25M   114MB/s    in 3.0s    
+
+
+
+2020-02-23 22:30:53 (114 MB/s) - â€˜/tmp/mdk.pkgâ€™ saved [362022327/362022327]
+
+
+
+travis_time:end:0f4e1000:start=1582497050489338000,finish=1582497053557400000,duration=3068062000,event=configure
+[0Ktravis_time:start:14d13bf7
+[0Kinstaller: Package name is Mono Framework
+
+installer: Installing at base path /
+
+installer:PHASE:Preparing for installationâ€¦
+
+installer:PHASE:Preparing the diskâ€¦
+
+installer:PHASE:Preparing Mono Frameworkâ€¦
+
+installer:PHASE:Waiting for other installations to completeâ€¦
+
+installer:PHASE:Configuring the installationâ€¦
+
+installer:STATUS:
+
+installer:%3.875013
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%5.098551
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%7.198590
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%9.298629
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%11.398668
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%13.498707
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%15.598746
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%17.698785
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%18.398798
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%19.098811
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%19.798824
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%21.898863
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%23.998902
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%26.098942
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%27.498968
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%30.299020
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%31.699046
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%33.099072
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%34.499098
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%35.899124
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%37.299150
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%38.699176
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%40.099202
+
+installer:PHASE:Writing filesâ€¦
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%40.799215
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%41.499228
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%42.199241
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%43.599267
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%44.299280
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%44.999293
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%46.399319
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%49.199371
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%51.999424
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%54.099463
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%56.899515
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%58.999554
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%61.099593
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%63.199632
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%63.899645
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%65.299671
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%67.399710
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%68.799736
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%70.899775
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%72.999814
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%75.099853
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%77.899906
+
+installer:PHASE:Writing filesâ€¦
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%79.299932
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%79.999945
+
+installer:PHASE:Writing filesâ€¦
+
+installer:%93.504671
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:%93.828842
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:%94.000205
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:PHASE:Running package scriptsâ€¦
+
+installer:%94.100896
+
+installer:PHASE:Writing package receiptsâ€¦
+
+installer:PHASE:Validating packagesâ€¦
+
+installer:%97.750000
+
+installer:STATUS:Running installer actionsâ€¦
+
+installer:STATUS:
+
+installer:PHASE:Finishing the Installationâ€¦
+
+installer:STATUS:
+
+installer:%100.000000
+
+installer:PHASE:The software was successfully installed.
+
+installer: The install was successful.
+
+travis_time:end:14d13bf7:start=1582497053571147000,finish=1582497199073081000,duration=145501934000,event=configure
+[0Ktravis_fold:end:mono-install
+[0Ktravis_fold:start:dotnet-install
+[0K[33;1mInstalling .NET Core[0m
+
+$ export DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+
+$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+travis_time:start:1066a0ac
+[0K$ wget --retry-connrefused --waitretry=1 -O /tmp/dotnet.pkg https://dotnetcli.azureedge.net/dotnet/Sdk/2.2/dotnet-sdk-2.2-osx-x64.pkg
+
+--2020-02-23 22:33:19--  https://dotnetcli.azureedge.net/dotnet/Sdk/2.2/dotnet-sdk-2.2-osx-x64.pkg
+
+Resolving dotnetcli.azureedge.net (dotnetcli.azureedge.net)... 72.21.81.200
+
+Connecting to dotnetcli.azureedge.net (dotnetcli.azureedge.net)|72.21.81.200|:443... connected.
+
+HTTP request sent, awaiting response... 404 Not Found
+
+2020-02-23 22:33:19 ERROR 404: Not Found.
+
+
+
+travis_time:end:1066a0ac:start=1582497199104004000,finish=1582497199492771000,duration=388767000,event=configure
+[0K[31;1mThe command "wget --retry-connrefused --waitretry=1 -O /tmp/dotnet.pkg https://dotnetcli.azureedge.net/dotnet/Sdk/2.2/dotnet-sdk-2.2-osx-x64.pkg" failed and exited with 8 during .[0m
+
+
+
+Your build has been stopped.
